@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css" integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxXQMt58DjNfkXFOn62xE+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-blue-600">
+    <section class=" bg-white min-h-screen mx-auto max-w-lg">
+        <header>
+            <div class="flex justify-between items-center">
+                <div class="flex justify-center items-center ml-4 mt-4">
+                    <img src="./assets/Group.png" alt="">
+                    <p class="font-bold text-3xl">$ <span>4500</span>
+                        <br> <span class="font-normal text-sm text-gray-500">available balance</span></p>
+                    
+                </div>
+                <div><button id="logout" class="btn mr-4">LOG OUT</button></div>
+            </div>
+        </header>
+        <hr class="mt-11">
+        <main>
+            <div class="px-8">
+                <h1 class="font-bold text-[24px] mt-[32px]">🔥 Welcome to Payooo!</h1>
+            <p class="mt-5">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+            </div>
+            <div class="grid grid-cols-3 gap-4 mx-5 mt-5">
+                
+                    <div id="add-money1" class="border-2 rounded-[8px] flex flex-col justify-center items-center p-4 cursor-pointer hover:bg-blue-100">
+                        <img  src="./assets/wallet1.png" alt="money">
+                        <p>Add Money</p>
+                    </div>
+                    <div id="cash1" class="border-2 rounded-[8px] flex flex-col justify-center items-center p-4 cursor-pointer hover:bg-blue-100">
+                        <img  src="./assets/send1.png" alt="money">
+                        <p>Cash Out</p>
+                    </div>
+                    <div class="border-2 rounded-[8px] flex flex-col justify-center items-center p-4 cursor-pointer hover:bg-blue-100">
+                        <img  src="./assets/money1.png" alt="money">
+                        <p>Transfer Money</p>
+                    </div>
+                
+                
+                    <div class="border-2 rounded-[8px] flex flex-col justify-center items-center p-4 cursor-pointer hover:bg-blue-100">
+                        <img  src="./assets/bonus1.png" alt="money">
+                        <p>Get Bonus</p>
+                    </div>
+                    <div class="border-2 rounded-[8px] flex flex-col justify-center items-center p-4 cursor-pointer hover:bg-blue-100">
+                        <img  src="./assets/purse1.png" alt="money">
+                        <p>Pay Bill</p>
+                    </div>
+                    <div class="border-2 rounded-[8px] flex flex-col justify-center items-center p-4 cursor-pointer hover:bg-blue-100">
+                        <img  src="./assets/transaction1.png" alt="money">
+                        <p>Transaction</p>
+                    </div>
+            </div>
+
+            <!-- Part 1 -->
+            <div id="welcome-payoo" class="mx-auto max-w-lg mt-5 bg-white p-6 rounded-lg shadow-lg">
+                <div class="flex justify-between items-center mb-4">
+                    <span class="text-lg font-bold">Latest Payment</span>
+                    <span class="text-blue-500 cursor-pointer">View All</span>
+                </div>
+                <div class="space-y-3">
+                    <div class="flex items-center p-4 bg-gray-50 rounded-lg shadow-sm">
+                        <div class="avatar">
+                            <div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center"><img src="./assets/wallet1.png" alt=""></div>
+                        </div>
+                        <div class="ml-4 flex-1">
+                            <div class="font-bold">Electricity Bill</div>
+                            <div class="text-gray-500 text-sm">Today 01:44 AM</div>
+                        </div>
+                        <div class="dropdown dropdown-end">
+                            <label tabindex="0" class="btn btn-ghost btn-circle">⋮</label>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 bg-gray-50 rounded-lg shadow-sm">
+                        <div class="avatar">
+                            <div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center"><img src="./assets/wallet1.png" alt=""></div>
+                        </div>
+                        <div class="ml-4 flex-1">
+                            <div class="font-bold">Bank Deposit</div>
+                            <div class="text-gray-500 text-sm">Today 01:44 AM</div>
+                        </div>
+                        <div class="dropdown dropdown-end">
+                            <label tabindex="0" class="btn btn-ghost btn-circle">⋮</label>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 bg-gray-50 rounded-lg shadow-sm">
+                        <div class="avatar">
+                            <div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center"><img src="./assets/wallet1.png" alt=""></div>
+                        </div>
+                        <div class="ml-4 flex-1">
+                            <div class="font-bold">Mobile Recharge</div>
+                            <div class="text-gray-500 text-sm">Today 01:44 AM</div>
+                        </div>
+                        <div class="dropdown dropdown-end">
+                            <label tabindex="0" class="btn btn-ghost btn-circle">⋮</label>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 bg-gray-50 rounded-lg shadow-sm">
+                        <div class="avatar">
+                            <div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center"><img src="./assets/wallet1.png" alt=""></div>
+                        </div>
+                        <div class="ml-4 flex-1">
+                            <div class="font-bold">Gas Bill</div>
+                            <div class="text-gray-500 text-sm">Today 01:44 AM</div>
+                        </div>
+                        <div class="dropdown dropdown-end">
+                            <label tabindex="0" class="btn btn-ghost btn-circle">⋮</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- part 2 -->
+            <div id="add-money" class="hero hero-content flex-col lg:flex-row-reverse ">
+                
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <h2 class="ml-3 font-bold mt-10">ADD MONEY</h2>
+                    <form class="card-body">
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text ">Select A Bank</span>
+                            </label>
+                            <select  name="Bank" id="bank-select" class="p-4 rounded-[8px] bg-base-200">
+                                <option value="" selected hidden>Select Bank</option>
+                                <option value="Nagad" >Nagad</option>
+                                <option value="Bkash" >Bkash</option>
+                                <option value="Rocket">Rocket</option>
+                            </select>
+                            <label class="label">
+                                <span class="label-text ">Bank Account Number</span>
+                            </label>
+                            <input id="mobile-nmbr"   type="number" placeholder="Enter Your Number"  class="input input-bordered bg-base-200" required />
+                            <label class="label">
+                                <span class="label-text ">Amount Number</span>
+                            </label>
+                            <input id="mobile-nmbr" value="01830807523"  type="number" placeholder="Enter Your Number"  class="input input-bordered bg-base-200" required />
+                            
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">4-digit Pin</span>
+                            </label>
+                            <input id="pin-num" type="password" placeholder="Enter 4-digit Pin" class="input input-bordered bg-base-200" required />
+                            <label class="label">
+                                <a href="#" class="label-text-alt link link-hover ">Forgot password?</a>
+                            </label>
+                        </div>
+                        <div class="form-control mt-6">
+                            <button id="btn-login-add-money" class="btn btn-primary">Add Money</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- part 3 -->
+            <div id="cash-out" class="hero hero-content flex-col lg:flex-row-reverse ">
+                <h2 class="font-bold">CASH OUT</h2>
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                        <div class="form-control">
+                            
+                            <label class="label">
+                                <span class="label-text ">Agent  Number</span>
+                            </label>
+                            <input id="mobile-nmbr"   type="text" placeholder="Enter Your Number"  class="input input-bordered bg-base-200" required />
+                            <label class="label">
+                                <span class="label-text ">Amount Number</span>
+                            </label>
+                            <input id="mobile-nmbr"  type="text" placeholder="Enter 11 digi   t Number"  class="input input-bordered bg-base-200" required />
+                            
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">4-digit Pin</span>
+                            </label>
+                            <input id="pin-num" type="password" placeholder="Enter 4-digit Pin" class="input input-bordered bg-base-200" required />
+                            
+                        </div>
+                        <div class="form-control mt-6">
+                            <button id="btn-login-add-money" class="btn btn-primary">Withdraw Money</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </section>
+    <script src="./main.js"></script>
+</body>
+
+</html>
